@@ -21,7 +21,7 @@ music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)
 radio.setGroup(7)
 basic.forever(function () {
     x = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.X), 1023, 0, -100, 100)
-    y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 1023, 0, -100, 100)
+    y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 0, 1023, -100, 100)
     radio.sendValue("x", x)
     radio.sendValue("y", y)
 })
