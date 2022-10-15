@@ -12,7 +12,8 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
     joystickbit.Vibration_Motor(100)
-    basic.showString("C")
+    basic.showString("Activate STOP")
+    radio.sendValue("stop", 0)
 })
 let y = 0
 let x = 0
